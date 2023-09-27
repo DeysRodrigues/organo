@@ -46,161 +46,128 @@ function App() {
 
   const inicial = [
     {
-      nome: 'JULIANA AMOASEI',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      nome: 'MORGAN LUCY',
+      cargo: 'Designer Criativo',
+      imagem: 'https://picsum.photos/200/200',
       time: times[0].nome
     },
     {
-      nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'CAILO PINHEIRO',
+      cargo: 'Especialista em Design',
+      imagem: 'https://github.com/cailopinheiro.png',
       time: times[0].nome
     },
     {
-      nome: 'GUILHERME LIMA',
-      cargo: 'Desenvolvedor Python e JavaScript na Alura',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      nome: 'DEYS RODRIGUES',
+      cargo: 'Desenvolvedor Front-end',
+      imagem: 'https://github.com/deysrodrigues.png',
       time: times[0].nome
     },
     {
-      nome: 'PAULO SILVEIRA',
-      cargo: 'Hipster e CEO da Alura',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      time: times[0].nome
-    },
-    {
-      nome: 'JULIANA AMOASEI',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      nome: 'DEYS RODRIGUES',
+      cargo: 'Designer de Interface',
+      imagem: 'https://loremflickr.com/200/200/dog',
       time: times[1].nome
     },
     {
-      nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'DEYS RODRIGUES',
+      cargo: 'Designer Gráfico',
+      imagem: 'https://loremflickr.com/200/200/bird',
       time: times[1].nome
     },
     {
-      nome: 'GUILHERME LIMA',
-      cargo: 'Desenvolvedor Python e JavaScript na Alura',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-      time: times[1].nome
-    },
-    {
-      nome: 'PAULO SILVEIRA',
-      cargo: 'Hipster e CEO da Alura',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      nome: 'DEYS RODRIGUES',
+      cargo: 'Desenvolvedor Web',
+      imagem: 'https://loremflickr.com/200/200/cat',
       time: times[1].nome
     },
     {
       nome: 'JULIANA AMOASEI',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://loremflickr.com/200/200/woman',
       time: times[2].nome
     },
     {
       nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      cargo: 'Analista de Sistemas',
+      imagem: 'https://loremflickr.com/200/200/men',
       time: times[2].nome
     },
     {
       nome: 'GUILHERME LIMA',
-      cargo: 'Desenvolvedor Python e JavaScript na Alura',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      cargo: 'Especialista em Marketing',
+      imagem: 'https://loremflickr.com/200/200/random',
       time: times[2].nome
     },
     {
-      nome: 'PAULO SILVEIRA',
-      cargo: 'Hipster e CEO da Alura',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      time: times[2].nome
-    },
-    {
-      nome: 'JULIANA AMOASEI',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      nome: 'JULIANA MULLER',
+      cargo: 'Analista de Dados',
+      imagem: 'https://loremflickr.com/200/200/people',
       time: times[3].nome
     },
     {
-      nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'LAURA ARTINE',
+      cargo: 'Gerente de Projeto',
+      imagem: 'https://loremflickr.com/200/200/fuit',
       time: times[3].nome
     },
     {
-      nome: 'GUILHERME LIMA',
-      cargo: 'Desenvolvedor Python e JavaScript na Alura',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      nome: 'PIETRA ALMEIDA',
+      cargo: 'Analista de Qualidade',
+      imagem: 'https://loremflickr.com/200/200/animal',
       time: times[3].nome
     },
     {
-      nome: 'PAULO SILVEIRA',
-      cargo: 'Hipster e CEO da Alura',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      time: times[3].nome
-    },
-    {
-      nome: 'JULIANA AMOASEI',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      nome: 'JOAQUIM ALVES',
+      cargo: 'Desenvolvedor de Software',
+      imagem: 'https://loremflickr.com/200/200/fish',
       time: times[4].nome
     },
     {
-      nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'DANIELA RIBEIRO',
+      cargo: 'Arquiteto de Soluções',
+      imagem: 'https://loremflickr.com/200/200/flower',
       time: times[4].nome
     },
     {
-      nome: 'GUILHERME LIMA',
-      cargo: 'Desenvolvedor Python e JavaScript na Alura',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      nome: 'GUILHERME SOUZA',
+      cargo: 'Analista de Suporte Técnico',
+      imagem: 'https://loremflickr.com/200/200/queen',
       time: times[4].nome
     },
     {
-      nome: 'PAULO SILVEIRA',
-      cargo: 'Hipster e CEO da Alura',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      time: times[4].nome
-    },
-    {
-      nome: 'JULIANA AMOASEI',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      nome: 'MOLLY FERNANDES',
+      cargo: 'UX Designer',
+      imagem: 'https://loremflickr.com/200/200/moon',
       time: times[5].nome
     },
     {
-      nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'LUCY GULLIVER',
+      cargo: 'Desenvolvedor Web',
+      imagem: 'https://loremflickr.com/200/200/girl',
       time: times[5].nome
     },
     {
-      nome: 'GUILHERME LIMA',
-      cargo: 'Desenvolvedor Python e JavaScript na Alura',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      nome: 'JANAINA KOTLIN',
+      cargo: 'Especialista em Marketing Digital',
+      imagem: 'https://loremflickr.com/200/200/boy',
       time: times[5].nome
-    },
-    {
-      nome: 'PAULO SILVEIRA',
-      cargo: 'Hipster e CEO da Alura',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      time: times[5].nome
-    },
-  ]
-
+    }
+  ];
+  
   const [colaboradores, setColaboradores] = useState(inicial)
 
+function deletarPessoa (){
 
+  console.log('deletando')
+}
   return (
     <div>
       <Banner />
       <Formulario times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time, indice) => <Time key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} />)}
+        {times.map((time, indice) => <Time key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
       </section>
       <Rodape />
     </div>

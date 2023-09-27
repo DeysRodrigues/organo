@@ -12,6 +12,7 @@ const Formulario = ({aoCadastrar, times}) => {
     const [time, setTime] = useState('')
 
     const aoSubmeter = (evento) => {
+        
         evento.preventDefault()
         console.log('form enviado', nome, cargo, imagem, time )
         aoCadastrar({
@@ -25,7 +26,7 @@ const Formulario = ({aoCadastrar, times}) => {
     return (
         <section className="formulario-container">
             <form className="formulario" onSubmit={aoSubmeter}>
-                <h2>Preencha os dados para criar o card do colaborador.</h2>
+                <h2>Preencha os dados.</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label='Nome'

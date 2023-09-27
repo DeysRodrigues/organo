@@ -1,3 +1,8 @@
+.formulario {
+
+    width: 30rem;
+}
+
 .formulario-container {
     display: flex;
     justify-content: center;
@@ -13,5 +18,7 @@
 }
 .formulario-container .formulario h2 {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 25px;
+    background-color: #f1f1f1;
+    padding: 1rem;
 }
