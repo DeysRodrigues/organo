@@ -30,8 +30,8 @@
 
 .input-container .input {
     border: none;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     padding: 0;
     background: transparent;
     outline: none; /* Remova o contorno ao focar */
