@@ -175,29 +175,52 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial)
 
-  const deletarPessoa = (id)=> {
+  const deletarPessoa = (id) => {
 
-    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id ))
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id))
+
   }
   const mudarCorTime = (cor, id) => {
     setTimes(times.map(time => {
       if (time.id === id) {
-          time.cor = cor;
+        time.cor = cor;
       }
       return time;
 
     }));
 
-  } 
+  }
+
+  const cadastrarTime = (novoTime) => {
+
+    setTimes([...times, { ...novoTime, id: uuidv4() }])
+  }
 
   return (
     <div>
       <Banner />
-      <Formulario times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
+
+      {/* componente que contem os formularios */}
+      <Formulario
+
+        // props para formulario de adicionar  time 
+        cadastrarTime={cadastrarTime}
+
+        // props para formulario de adicionar colaborador
+        times={times.map(time => time.nome)}
+        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}
+
+      />
+
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time, indice) => <Time mudarCor={mudarCorTime} key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
+        {times.map((time, indice) => <Time 
+        mudarCor={mudarCorTime} 
+        key={indice} 
+        time={time} 
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
       </section>
+
       <Rodape />
     </div>
   );

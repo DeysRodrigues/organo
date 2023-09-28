@@ -4,6 +4,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 .times {
@@ -20,5 +21,5 @@ h1 {
 }
 
 h1, h2 {
-  font-family: 'Prata', serif;
+  font-family: 'Inclusive Sans', sans-serif;
 }
