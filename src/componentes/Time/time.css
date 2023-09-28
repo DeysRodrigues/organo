@@ -39,11 +39,12 @@
 
 .input::-webkit-color-swatch-wrapper {
     border: none; /* Remove a borda da caixa de seleção */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adicione sombra embaixo da caixa de seleção */
+   
   }
   .input::-webkit-color-swatch {
     border: none; /* Remove a borda da caixa de seleção */
     border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adicione sombra embaixo da caixa de seleção */
   }
 .input-container .icon {
 
