@@ -9,7 +9,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
         colaboradores.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.6') }}>
 
             <div className='input-container'>
-                <input value={time.cor} onChange={evento => mudarCor(evento.target.value, time.nome)} type='color' className='input' />
+                <input value={time.cor} onChange={evento => mudarCor(evento.target.value, time.id)} type='color' className='input' />
                 <BiSolidColorFill size={30} color='white' className='icon' />
             </div>
 
