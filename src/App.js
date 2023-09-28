@@ -192,9 +192,18 @@ function App() {
   }
 
   const cadastrarTime = (novoTime) => {
+    // Verifique se o nome do novoTime já existe em algum time existente
+    const nomeExistente = times.some((time) => time.nome === novoTime.nome);
 
-    setTimes([...times, { ...novoTime, id: uuidv4() }])
-  }
+    if (!nomeExistente) {
+      // Se o nome não existir, adicione o novoTime
+      setTimes([...times, { ...novoTime, id: uuidv4() }]);
+      alert('Agora seu time está na lista de times do outro formulário :)');
+    } else {
+      alert('O nome do time já existe. Escolha um nome único para o time.');
+    }
+  };
+
 
   return (
     <div>
@@ -214,11 +223,11 @@ function App() {
 
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time, indice) => <Time 
-        mudarCor={mudarCorTime} 
-        key={indice} 
-        time={time} 
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
+        {times.map((time) => <Time
+          mudarCor={mudarCorTime}
+          key={time.id}
+          time={time}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
       </section>
 
       <Rodape />
