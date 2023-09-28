@@ -156,10 +156,10 @@ function App() {
   }
 
   const mudarCorTime = (cor, nome) => {
-
+    debugger
     setTimes(times.map(time => {
       if (time.nome === nome) {
-          time.corSecundaria = cor;
+          time.cor = cor;
       }
       return time;
 
