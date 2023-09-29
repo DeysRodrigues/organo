@@ -3,6 +3,8 @@
     color: #FFF;
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
 }
