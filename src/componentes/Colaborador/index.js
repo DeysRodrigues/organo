@@ -1,8 +1,21 @@
 import { icons } from 'react-icons'
-import { AiFillCloseCircle } from 'react-icons/ai'
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import './colaborador.css'
 
-const Colaborador = ({ colaborador, corDeFundo, aoDeletar }) => {
+const Colaborador = ({ colaborador, corDeFundo, aoDeletar, aoFavoritar }) => {
+    
+    const favoritar = () => {
+
+        aoFavoritar(colaborador.id)
+    }
+    // props dos icons de favorito
+    const propsFavorito = {
+
+        size: 30,
+        onClick: favoritar,
+        color: corDeFundo,
+        className: 'heart'
+    }
 
     return (<div className="colaborador">
 
@@ -20,6 +33,15 @@ const Colaborador = ({ colaborador, corDeFundo, aoDeletar }) => {
         <div className="rodape">
             <h4>{colaborador.nome}</h4>
             <h5>{colaborador.cargo}</h5>
+            <div className='favoritar'>
+                {colaborador.favorito ?
+                    <AiFillHeart
+                        {...propsFavorito}
+                    /> :
+                    <AiOutlineHeart
+                        {...propsFavorito}
+                    />}
+            </div>
 
         </div>
     </div>)

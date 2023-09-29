@@ -1,14 +1,14 @@
-.campo-texto {
+.campo {
     margin: 24px 0;
 }
 
-.campo-texto label {
+.campo label {
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
 }
 
-.campo-texto input {
+.campo-text input {
     background: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     border-radius: 0px;
@@ -17,4 +17,18 @@
     font-size: 18px;
     padding: 14px;
     box-sizing: border-box;
+}
+
+.campo-color input {
+
+    width: 4rem;
+    height: 3rem;
+    border: none;
+
+}
+
+.campo-color::-webkit-color-swatch-wrapper {
+    border: none;
+    /* Remove a borda da caixa de seleção */
+
 }

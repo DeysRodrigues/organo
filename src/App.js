@@ -47,6 +47,8 @@ function App() {
 
   const inicial = [
     {
+
+      favorito: false,
       id: uuidv4(),
       nome: 'MORGAN LUCY',
       cargo: 'Designer Criativo',
@@ -54,6 +56,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: true,
       id: uuidv4(),
       nome: 'CAILO PINHEIRO',
       cargo: 'Especialista em Design',
@@ -61,6 +64,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DEYS RODRIGUES',
       cargo: 'Desenvolvedor Front-end',
@@ -68,6 +72,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DEYS RODRIGUES',
       cargo: 'Designer de Interface',
@@ -75,6 +80,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DEYS RODRIGUES',
       cargo: 'Designer Gráfico',
@@ -82,6 +88,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DEYS RODRIGUES',
       cargo: 'Desenvolvedor Web',
@@ -89,6 +96,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Engenheiro de Software',
@@ -96,6 +104,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Analista de Sistemas',
@@ -103,6 +112,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Especialista em Marketing',
@@ -110,6 +120,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA MULLER',
       cargo: 'Analista de Dados',
@@ -117,6 +128,7 @@ function App() {
       time: times[3].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'LAURA ARTINE',
       cargo: 'Gerente de Projeto',
@@ -124,6 +136,7 @@ function App() {
       time: times[3].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PIETRA ALMEIDA',
       cargo: 'Analista de Qualidade',
@@ -137,6 +150,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIELA RIBEIRO',
       cargo: 'Arquiteto de Soluções',
@@ -144,6 +158,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME SOUZA',
       cargo: 'Analista de Suporte Técnico',
@@ -151,6 +166,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'MOLLY FERNANDES',
       cargo: 'UX Designer',
@@ -158,6 +174,7 @@ function App() {
       time: times[5].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'LUCY GULLIVER',
       cargo: 'Desenvolvedor Web',
@@ -165,6 +182,7 @@ function App() {
       time: times[5].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JANAINA KOTLIN',
       cargo: 'Especialista em Marketing Digital',
@@ -204,6 +222,14 @@ function App() {
     }
   };
 
+  const resolverFavorito = (id) => {
+
+    setColaboradores(colaboradores.map(colaborador => {
+
+      if (colaborador.id === id) colaborador.favorito = !colaborador.favorito;
+      return colaborador;
+    }))
+  }
 
   return (
     <div>
@@ -223,11 +249,13 @@ function App() {
 
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time) => <Time
-          mudarCor={mudarCorTime}
-          key={time.id}
-          time={time}
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
+        {times.map((time) =>
+          <Time
+            aoFavoritar={resolverFavorito}
+            mudarCor={mudarCorTime}
+            key={time.id}
+            time={time}
+            colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarPessoa} />)}
       </section>
 
       <Rodape />

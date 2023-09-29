@@ -46,3 +46,10 @@
 .deletar:hover {
     transform: scale(1.5); /* Aumenta o tamanho do botão em 10% ao passar o mouse */
 }
+.heart {
+    margin-top: 1rem;
+    transition: transform 0.3s ease;  
+}
+.heart:hover {
+    transform: scale(1.5);
+}
