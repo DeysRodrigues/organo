@@ -74,7 +74,7 @@ function App() {
     {
       favorito: false,
       id: uuidv4(),
-      nome: 'DEYS RODRIGUES',
+      nome: 'PAMELA ALVES',
       cargo: 'Designer de Interface',
       imagem: 'https://loremflickr.com/200/200/dog',
       time: times[1].nome
@@ -82,7 +82,7 @@ function App() {
     {
       favorito: false,
       id: uuidv4(),
-      nome: 'DEYS RODRIGUES',
+      nome: 'lUCY SILVEIRA',
       cargo: 'Designer Gráfico',
       imagem: 'https://loremflickr.com/200/200/bird',
       time: times[1].nome
@@ -90,7 +90,7 @@ function App() {
     {
       favorito: false,
       id: uuidv4(),
-      nome: 'DEYS RODRIGUES',
+      nome: 'MOLLY RODRIGUES',
       cargo: 'Desenvolvedor Web',
       imagem: 'https://loremflickr.com/200/200/cat',
       time: times[1].nome
